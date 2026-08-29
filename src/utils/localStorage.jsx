@@ -3,8 +3,17 @@ import { jsxs } from "react/jsx-runtime";
 const employees = [
     {
         id: 1,
+        firstname: "Rahul",
         email: "employee1@gmail.com",
         password: "123",
+
+        taskNumbers: {
+            active: 3,
+            newTask: 2,
+            completed: 1,
+            failed: 1
+        },
+
         tasks: [
             {
                 active: true,
@@ -58,10 +67,20 @@ const employees = [
             }
         ]
     },
+
     {
         id: 2,
+        firstname: "Priya",
         email: "employee2@gmail.com",
         password: "123",
+
+        taskNumbers: {
+            active: 2,
+            newTask: 1,
+            completed: 2,
+            failed: 1
+        },
+
         tasks: [
             {
                 active: true,
@@ -115,10 +134,20 @@ const employees = [
             }
         ]
     },
+
     {
         id: 3,
+        firstname: "Amit",
         email: "employee3@gmail.com",
         password: "123",
+
+        taskNumbers: {
+            active: 2,
+            newTask: 2,
+            completed: 2,
+            failed: 1
+        },
+
         tasks: [
             {
                 active: true,
@@ -172,10 +201,20 @@ const employees = [
             }
         ]
     },
+
     {
         id: 4,
+        firstname: "Neha",
         email: "employee4@gmail.com",
         password: "123",
+
+        taskNumbers: {
+            active: 3,
+            newTask: 2,
+            completed: 1,
+            failed: 1
+        },
+
         tasks: [
             {
                 active: true,
@@ -229,10 +268,20 @@ const employees = [
             }
         ]
     },
+
     {
         id: 5,
+        firstname: "Arjun",
         email: "employee5@gmail.com",
         password: "123",
+
+        taskNumbers: {
+            active: 2,
+            newTask: 2,
+            completed: 2,
+            failed: 1
+        },
+
         tasks: [
             {
                 active: true,
