@@ -9,9 +9,9 @@ const AcceptTask = () => {
             </div>
             <h2 className=' mt-5 text-2xl font-semibold'>make a website</h2>
             <p className='text-sm mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in iste excepturi quibusdam sunt quia.</p>
-            <div>
-                <button>Mark as Completed</button>
-                <button>Mark as Failed</button>
+            <div className='flex justify-between mt-4'>
+                <button className='bg-green-500 py-1 px-2 text-sm rounded'>Mark as Completed</button>
+                <button className='bg-red-500 py-1 px-2 text-sm rounded'>Mark as Failed</button>
             </div>
         </div>
     )

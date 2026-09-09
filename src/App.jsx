@@ -8,7 +8,6 @@ const App = () => {
 
   const [user, setUser] = useState(null)
   const [loggedInUserData, setLoggedInUserData] = useState(null)
-
   const authData = useContext(AuthContext)
 
   useEffect(() => {
