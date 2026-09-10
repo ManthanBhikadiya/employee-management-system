@@ -11,13 +11,14 @@ const App = () => {
   const authData = useContext(AuthContext)
 
   useEffect(() => {
-    if (authData) {
-      const loggedInUser = localStorage.getItem("loggedInUser")
-      if (loggedInUser) {
-        setUser(JSON.parse(loggedInUser).role)
-      }
+    const loggedInUser = localStorage.getItem('loggedInUser')
+
+    if (loggedInUser) {
+      const userData = JSON.parse(loggedInUser)
+      setUser(userData.role)
+      setLoggedInUserData(userData.data)
     }
-  }, [authData])
+  }, [])
 
   const handleLogin = (email, password) => {
     const admin = authData?.admin?.find((user) => email === user.email && password === user.password)
